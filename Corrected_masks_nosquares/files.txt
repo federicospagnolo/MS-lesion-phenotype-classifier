@@ -1,3 +1,0 @@
-List of files:
-P001_TP1_instance_segmentation_in_EPI_th_th4v_corner_components_labels_TS.nii.gz
-P002_TP1_instance_segmentation_in_EPI_th_th4v_corner_components_labels_TS.nii.gz
