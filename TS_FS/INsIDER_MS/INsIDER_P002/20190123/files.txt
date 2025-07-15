@@ -1,0 +1,7 @@
+Files list:
+FLAIR_in_EPI.nii.gz
+MP2RAGE_UNI_masked_in_EPI.nii.gz
+Phase_bet.nii.gz
+PRL_mask.nii.gz
+PRL_mask_ph.nii.gz
+QSM.nii.gz
