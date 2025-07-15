@@ -1,6 +1,6 @@
 <h1 align="center">MS lesion phenotype classifier </h1>
 
-> Scripts to perform multi-class classification of MS lesions based on their phenotype.<br /> Lesion phenotype classifier can use quantitative susceptibility mapping (QSM) and T1-weighted MR images to predict rim positive, hyper-intense, and iso-/hypo-intense lesions, based on Rahmanzadeh et al. (2022) [1]. In addition, the same classifier can be used to distinguish PRL positive and negative lesions using either QSM or filtered phase unwrapped (PU) and T1-weighted images. To develop the architecture we built upon the work of Barquero et al. (2020) [2].
+> Scripts to perform multi-class classification of MS lesions based on their phenotype. Lesion phenotype classifier can use quantitative susceptibility mapping (QSM) and T1-weighted MR images to predict rim positive, hyper-intense, and iso-/hypo-intense lesions, based on Rahmanzadeh et al. (2022) [1]. In addition, the same classifier can be used to distinguish PRL positive and negative lesions using either QSM or filtered phase unwrapped (PU) and T1-weighted images. To develop the architecture we built upon the work of Barquero et al. (2020) [2]. <br />
 
 ## 🚀 Usage
 
