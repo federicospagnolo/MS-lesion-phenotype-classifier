@@ -33,7 +33,7 @@ dir_4_7 = os.path.join(base_dir, f"../{contrast}_4-7")
 dir_above = os.path.join(base_dir, f"../{contrast}_above")
 
 # Directories for 3-fold cross-validation
-output_dir = f"/home/federico.spagnolo/Federico/PRLsConfluent/TS_FS/INsIDER_MS_nested_kfold/{contrast}"
+output_dir = f"/home/federico.spagnolo/Federico/PRLsConfluent/TS_FS/INsIDER_MS_patches_nested_kfold_binary/{contrast}"
 
 # Create PRL-based directories if they don't exist
 os.makedirs(dir_0, exist_ok=True)
