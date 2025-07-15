@@ -1,6 +1,6 @@
 <h1 align="center">MS lesion phenotype classifier </h1>
 
-> Scripts to perform multi-class classification of MS lesions based on their phenotype.<br /> Lesion phenotype classifier can use quantitative susceptibility mapping (QSM) and T1-weighted MR images to predict rim positive, hyper-intense, and iso-/hypo-intense lesions. In addition, the same classifier can be used to distinguish PRL positive and negative lesions using either QSM or filtered phase unwrapped (PU) and T1-weighted images.
+> Scripts to perform multi-class classification of MS lesions based on their phenotype.<br /> Lesion phenotype classifier can use quantitative susceptibility mapping (QSM) and T1-weighted MR images to predict rim positive, hyper-intense, and iso-/hypo-intense lesions, based on Rahmanzadeh et al. (2022) [1]. In addition, the same classifier can be used to distinguish PRL positive and negative lesions using either QSM or filtered phase unwrapped (PU) and T1-weighted images. To develop the architecture we built upon the work of Barquero et al. (2020) [2].
 
 ## 🚀 Usage
 
@@ -53,11 +53,21 @@ To train the network on multiclass configuration run
 sh train_1.sh T1 QSM Mask {gpu_ID} multiclass
 sh train_2.sh T1 QSM Mask {gpu_ID} multiclass
 ```
+The folder "train_AB_FS/training/{task}" contains the file "extract_winner.py" to extract the best model for the inner loops. Run
+```sh
+python extract_winner.py T1 Phase QSM
+```
 
-To test the network on binary configuration run
-sh test_1.sh T1 Phase/QSM Mask 4 binary
-sh test_1.sh T1 Phase/QSM Mask 4 binary
-
+To test the network on binary configuration, edit the option --sub_folder to match that of the best performing models, and run
+```sh
+sh test_1.sh T1 {contrast_name} Mask 4 binary
+sh test_1.sh T1 {contrast_name} Mask 4 binary
+```
+To test the network on multiclass configuration, edit the option --sub_folder to match that of the best performing models, and run
+```sh
+sh test_1.sh T1 {contrast_name} Mask 4 multiclass
+sh test_1.sh T1 {contrast_name} Mask 4 multiclass
+```
 
 ## Code Contributors
 
@@ -72,4 +82,5 @@ This work is part of the project MSxplain, and has been submitted to Radiology: 
 
 ## References
 
-1. 
+1. Rahmanzadeh, R., Galbusera, R., Lu, P.-J., Bahn, E., Weigel, M., Barakovic, M., Franz, J., Nguyen, T.D., Spincemaille, P., Schiavi, S., Daducci, A., La Rosa, F., Absinta, M., Sati, P., Bach Cuadra, M., Radue, E.-W., Leppert, D., Kuhle, J., Kappos, L., Brück, W., Reich, D.S., Stadelmann, C., Wang, Y. and Granziera, C. (2022), A New Advanced MRI Biomarker for Remyelinated Lesions in Multiple Sclerosis. Ann Neurol, 92: 486-502. doi: [Link Text]https://doi.org/10.1002/ana.26441
+2. German Barquero, Francesco La Rosa, Hamza Kebiri, Po-Jui Lu, Reza Rahmanzadeh, Matthias Weigel, Mario Joao Fartaria, Tobias Kober, Marie Theaudin, Renaud Du Pasquier, Pascal Sati, Daniel S. Reich, Martina Absinta, Cristina Granziera, Pietro Maggi, and Meritxell Bach Cuadra. RimNet: A deep 3D multimodal MRI architecture for paramagnetic rim lesion assessment in multiple sclerosis. NeuroImage: Clinical, 28:102412, 2020. ISSN 2213-1582. doi: [Link Text]https://doi.org/10.1016/j.nicl.2020.102412.
