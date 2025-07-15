@@ -1,7 +1,7 @@
 ##############################
 #Written by Federico Spagnolo 
 #usage:
-#conda activate conflunet
+#conda activate lpc
 #python INsIDER_prl_stats.py
 ##############################
 
