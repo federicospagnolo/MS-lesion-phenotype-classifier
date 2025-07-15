@@ -1,4 +1,4 @@
-name: rimnet
+name: lpc
 channels:
   - defaults
 dependencies:
