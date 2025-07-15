@@ -151,10 +151,10 @@ current_dir = os.getcwd()
 
 if str(folder_set) != 'test':
       input_path = f'{current_dir}/../TS_FS/INsIDER_MS_nested_kfold/{ph_contrast}/{folder}/{sub_folder}/{folder_set}'
-      output_path = f'{current_dir}/INsIDER_MS_patches_nested_kfold_{task}_FLAIR/{ph_contrast}/{folder}/{sub_folder}/{folder_set}/'
+      output_path = f'{current_dir}/INsIDER_MS_patches_nested_kfold_{task}/{ph_contrast}/{folder}/{sub_folder}/{folder_set}/'
 else:
       input_path = f'{current_dir}/../TS_FS/INsIDER_MS_nested_kfold/{ph_contrast}/{folder}/{folder_set}'         
-      output_path = f'{current_dir}/INsIDER_MS_patches_nested_kfold_{task}_FLAIR/{ph_contrast}/{folder}/{folder_set}/'
+      output_path = f'{current_dir}/INsIDER_MS_patches_nested_kfold_{task}/{ph_contrast}/{folder}/{folder_set}/'
 
 output_file = output_path + f'{folder_set}_data.csv'
 struct = np.array(ndimage.generate_binary_structure(3, 1))
