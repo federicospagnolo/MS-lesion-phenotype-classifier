@@ -70,4 +70,3 @@ dependencies:
     - tqdm==4.66.1
     - typing-extensions==4.12.2
     - zipp==3.20.0
-prefix: /home/federico.spagnolo/miniconda3/envs/rimnet
