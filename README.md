@@ -61,12 +61,12 @@ python extract_winner.py T1 Phase QSM
 To **test** the network on binary configuration, edit the option --sub_folder to match that of the best performing models, and run
 ```sh
 sh test_1.sh T1 {contrast_name} Mask 4 binary
-sh test_1.sh T1 {contrast_name} Mask 4 binary
+sh test_2.sh T1 {contrast_name} Mask 4 binary
 ```
 To test the network on multiclass configuration, edit the option --sub_folder to match that of the best performing models, and run
 ```sh
 sh test_1.sh T1 {contrast_name} Mask 4 multiclass
-sh test_1.sh T1 {contrast_name} Mask 4 multiclass
+sh test_2.sh T1 {contrast_name} Mask 4 multiclass
 ```
 
 ## Code Contributors
