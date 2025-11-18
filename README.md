@@ -71,7 +71,7 @@ sh test_2.sh T1 {contrast_name} Mask 4 multiclass
 
 ## Code Contributors
 
-This work is part of the project MSxplain. The code was developed starting from a Torch version of RimNet (https://github.com/Medical-Image-Analysis-Laboratory/TorchRimNet.git). Access to that code was kindly provided by Dr. Pedro M. Gordaliza.
+This work is part of the project [MSxplain](https://wp.unil.ch/mial/research/projects/msxplain/). The code was developed starting from a Torch version of RimNet (https://github.com/Medical-Image-Analysis-Laboratory/TorchRimNet.git). Access to that code was kindly provided by Dr. Pedro M. Gordaliza.
 
 ## Author
 
