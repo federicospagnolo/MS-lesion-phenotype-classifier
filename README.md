@@ -69,6 +69,9 @@ sh test_1.sh T1 {contrast_name} Mask 4 multiclass
 sh test_2.sh T1 {contrast_name} Mask 4 multiclass
 ```
 
+## Data availability
+The data that support the findings of this study are available from the University Hospital of Basel, Switzerland, but restrictions apply to the availability of these data, which were used under license for the current study, and so are not publicly available.
+
 ## Code Contributors
 
 This work is part of the project [MSxplain](https://wp.unil.ch/mial/research/projects/msxplain/). The code was developed starting from a Torch version of RimNet (https://github.com/Medical-Image-Analysis-Laboratory/TorchRimNet.git). Access to that code was kindly provided by Dr. Pedro M. Gordaliza.
