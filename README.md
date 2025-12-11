@@ -70,7 +70,7 @@ sh test_2.sh T1 {contrast_name} Mask 4 multiclass
 ```
 
 ## Data availability
-The data that support the findings of this study are available from the University Hospital of Basel, Switzerland, but restrictions apply to the availability of these data, which were used under license for the current study, and so are not publicly available.
+The data that support the findings of this study are available from the University Hospital of Basel, Switzerland, but restrictions apply to the availability of these data, which were used under license for the current study, and so are not publicly available. Data are however available from the authors upon reasonable request and with permission of the University Hospital of Basel, Switzerland.
 
 ## Code Contributors
 
